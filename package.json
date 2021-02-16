@@ -1,7 +1,9 @@
 {
   "name": "vue-snakke",
   "version": "0.0.0",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/vue-snakke.umd.js",
   "module": "./dist/vue-snakke.es.js",
   "scripts": {
@@ -10,9 +12,10 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "vue": "3.0.5",
     "@vitejs/plugin-vue": "1.1.4",
     "@vue/compiler-sfc": "3.0.5",
-    "vite": "2.0.0-beta.69"
+    "prettier": "2.2.1",
+    "vite": "2.0.0-beta.69",
+    "vue": "3.0.5"
   }
 }
