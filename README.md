@@ -24,4 +24,4 @@ const { progress } = useSnakke();
 
 ---
 
-*This project is heavily inspired by [React Snakke](https://github.com/diogomoretti/react-snakke) from [diogomoretti](https://github.com/diogomoretti).*
+_This project is heavily inspired by [React Snakke](https://github.com/diogomoretti/react-snakke) from [diogomoretti](https://github.com/diogomoretti)._
