@@ -1,6 +1,16 @@
 {
   "name": "vue-snakke",
   "version": "0.0.0",
+  "description": "Vue 3 utility that enables you to track page scrolling progress",
+  "keywords": [
+    "vue",
+    "vue3"
+  ],
+  "homepage": "https://github.com/viniciuskneves/vue-snakke#readme",
+  "bugs": "https://github.com/viniciuskneves/vue-snakke/issues",
+  "license": "MIT",
+  "author": "Vinicius Kiatkoski Neves <viniciuskneves@icloud.com>",
+  "repository": "viniciuskneves/vue-snakke",
   "files": [
     "dist"
   ],
