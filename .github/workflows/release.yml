@@ -19,7 +19,7 @@ jobs:
       - name: Run example build
         run: npm run build
       - name: Deploy example
-        uses: peaceiris/actions-gh-pages@3.7.3
+        uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
