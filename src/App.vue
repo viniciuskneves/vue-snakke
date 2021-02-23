@@ -1,32 +1,8 @@
 <template>
   <Snakke />
-  <header>
-    <div class="header-content">
-      <img
-        alt="Logo React Snakke"
-        src="https://user-images.githubusercontent.com/2853428/53923774-33b04300-4058-11e9-869e-609617127781.png"
-      />
 
-      <div class="button-wrapper">
-        <a
-          class="button"
-          href="https://github.com/diogomoretti/react-snakke"
-          target="_blank"
-          rel="noopener noreferrer"
-          >View on github</a
-        >
-      </div>
-    </div>
-
-    <span class="scroll-indicator">
-      <span class="scroll-indicator__line"></span>
-      Scroll
-    </span>
-  </header>
-
-  <div class="demo">
-    <h1>React Snakke demo</h1>
-
+  <main class="demo">
+    <h1>Vue Snakke demo</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
       lacinia leo. Proin et lorem porta, dapibus lorem at, lobortis diam.
@@ -362,9 +338,8 @@
       hendrerit sapien sed bibendum. Vivamus lobortis, nisl quis consequat
       vehicula, lacus tortor finibus diam, non interdum dolor urna nec lorem.
     </p>
-
-    <p class="end">End of the page ;)</p>
-  </div>
+    <p class="end">End of the page 😉</p>
+  </main>
 </template>
 
 <script setup>
@@ -372,55 +347,9 @@ import Snakke from './components/Snakke.vue';
 </script>
 
 <style>
-body {
-  background: #fff;
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 main {
-  max-width: 800px;
+  max-width: 90vw;
   margin: 0 auto;
-  padding: 0 2em;
-}
-
-header {
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-img {
-  max-width: 600px;
-  width: 100%;
-}
-
-.header-content {
-  margin-top: -2em;
-}
-
-.button-wrapper {
-  padding-top: 3em;
-}
-
-.button {
-  background: #a6505a;
-  color: #fff;
-  font-size: 1em;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 1em 1.5em;
-  border-radius: 4px;
-}
-
-h1 {
-  font-size: 2.6em;
-  margin-bottom: 1em;
 }
 
 p {
@@ -428,36 +357,7 @@ p {
   margin-bottom: 2.5em;
 }
 
-.scroll-indicator {
-  position: absolute;
-  bottom: 10px;
-  display: block;
-  padding-top: 40px;
-  padding-bottom: 10px;
-  font-size: 8px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.scroll-indicator__line {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 1px;
-  height: 25px;
-  background-color: #000;
-  margin: auto;
-  content: '';
-}
-
-.demo {
-  padding-top: 5em;
-}
-
 .end {
-  margin: 2em 0 3em;
   font-weight: bold;
 }
 </style>
