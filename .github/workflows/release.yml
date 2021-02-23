@@ -17,10 +17,10 @@ jobs:
           node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
       - run: npm ci
       - name: Run example build
-        run: npm run build
+        run: npm run build -- --base /vue-snakke/
       - name: Deploy example
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
-          commit_message: 🚀
+          full_commit_message: 🚀 v0.0.3
