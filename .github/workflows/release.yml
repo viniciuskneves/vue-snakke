@@ -1,0 +1,26 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Read .nvmrc
+        run: echo "::set-output name=NODE_VERSION::$(cat .nvmrc)"
+        id: nvm
+      - uses: actions/setup-node@v2.1.4
+        with:
+          node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
+      - run: npm ci
+      - name: Run example build
+        run: npm run build -- --base /vue-snakke/
+      - name: Deploy example
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          full_commit_message: 🚀 ${{ github.event.release.tag_name }}
