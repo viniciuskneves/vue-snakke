@@ -17,8 +17,9 @@
   "main": "./dist/vue-snakke.umd.js",
   "module": "./dist/vue-snakke.es.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "start": "vite",
+    "build": "BUILD_LIB=false vite build",
+    "build:lib": "vite build",
     "serve": "vite preview",
     "prettier": "prettier --write .",
     "prettier:check": "prettier --check .",

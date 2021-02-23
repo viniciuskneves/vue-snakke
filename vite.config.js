@@ -2,10 +2,14 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import path from 'path';
 
-// https://vitejs.dev/config/
-export default defineConfig({
+const BUILD_LIB = process.env.BUILD_LIB !== 'false';
+
+const viteConfig = defineConfig({
   plugins: [vue()],
-  build: {
+});
+
+if (BUILD_LIB) {
+  viteConfig.build = {
     lib: {
       entry: path.resolve(__dirname, './index.js'),
       name: 'Vue Snakke',
@@ -13,5 +17,7 @@ export default defineConfig({
     rollupOptions: {
       external: ['vue'],
     },
-  },
-});
+  };
+}
+
+export default viteConfig;
