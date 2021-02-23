@@ -24,12 +24,20 @@ const { progress } = useSnakke();
 
 ## Development
 
+Starting the project for development:
+
+```
+npm start
+```
+
 ### Commands
 
 Run through `npm run [command]`:
 
 - `prettier`: runs Prettier on write mode (overwrites files)
 - `prettier:check`: runs Prettier on check mode (useful in CI)
+- `build`: builds the example page (used for deployment)
+- `build:lib`: builds the library (used for releases)
 
 ---
 
