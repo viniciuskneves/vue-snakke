@@ -1,8 +1,8 @@
-name: Release
+name: CD
 
 on:
-  release:
-    types: [published]
+  push:
+    branches: [main]
 
 jobs:
   example:
@@ -23,4 +23,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
-          full_commit_message: 🚀 ${{ github.event.release.tag_name }}
+          commit_message: 🚀
