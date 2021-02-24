@@ -12,15 +12,15 @@ jobs:
       - name: Read .nvmrc
         run: echo "::set-output name=NODE_VERSION::$(cat .nvmrc)"
         id: nvm
+      - uses: actions/setup-node@v2.1.4
+        with:
+          node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
       - uses: actions/cache@v2.1.4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - uses: actions/setup-node@v2.1.4
-        with:
-          node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
       - run: npm ci
       - name: Run example build
         run: npm run build -- --base /vue-snakke/
