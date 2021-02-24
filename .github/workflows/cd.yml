@@ -1,8 +1,8 @@
-name: Release
+name: CD
 
 on:
-  release:
-    types: [published]
+  push:
+    branches: [main]
 
 jobs:
   example:
