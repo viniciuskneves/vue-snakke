@@ -20,6 +20,7 @@
     "start": "vite",
     "build": "BUILD_LIB=false vite build",
     "build:lib": "vite build",
+    "build:declaration": "tsc --emitDeclarationOnly",
     "serve": "vite preview",
     "prettier": "prettier --write .",
     "prettier:check": "prettier --check .",

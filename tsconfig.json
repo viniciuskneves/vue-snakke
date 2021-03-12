@@ -4,6 +4,8 @@
     "module": "esnext",
     "moduleResolution": "node",
     "strict": true,
+    "declaration": true,
+    "declarationDir": "./types",
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
