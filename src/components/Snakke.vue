@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import useSnakke from '../services/Snakke.js';
+import useSnakke from '../services/Snakke';
 
 const { progress } = useSnakke();
 </script>

@@ -11,7 +11,7 @@ const viteConfig = defineConfig({
 if (BUILD_LIB) {
   viteConfig.build = {
     lib: {
-      entry: path.resolve(__dirname, './index.js'),
+      entry: path.resolve(__dirname, './index.ts'),
       name: 'Vue Snakke',
     },
     rollupOptions: {
