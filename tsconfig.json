@@ -6,6 +6,7 @@
     "strict": true,
     "declaration": true,
     "declarationDir": "./types",
+    "emitDeclarationOnly": true,
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
@@ -13,5 +14,5 @@
     "lib": ["esnext", "dom"],
     "types": ["vite/client"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"]
+  "include": ["src/services/*.ts"]
 }
