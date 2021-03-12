@@ -20,7 +20,7 @@ import { useSnakke } from 'vue-snakke';
 const { progress } = useSnakke();
 ```
 
-`progress` is a readonly value (from 0 to 1) that will automatically update whenever the page is scrolled. You can use it to indicate page progress.
+`progress` is a Ref value (from 0 to 1) that will automatically update whenever the page is scrolled. You can use it to indicate page progress.
 
 ## Development
 
@@ -38,6 +38,7 @@ Run through `npm run [command]`:
 - `prettier:check`: runs Prettier on check mode (useful in CI)
 - `build`: builds the example page (used for deployment)
 - `build:lib`: builds the library (used for releases)
+- `build:declaration`: builds the declarations (used for releases)
 
 ---
 
