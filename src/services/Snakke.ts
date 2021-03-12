@@ -1,4 +1,4 @@
-import { ref, onUnmounted } from 'vue';
+import { ref, readonly, onUnmounted } from 'vue';
 
 export default function useSnakke() {
   const progress = ref(0);
@@ -17,5 +17,5 @@ export default function useSnakke() {
     window.removeEventListener('scroll', updateProgress);
   });
 
-  return { progress: progress };
+  return { progress: readonly(progress) };
 }
