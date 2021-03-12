@@ -1,3 +1,3 @@
-import useSnakke from './src/services/Snakke.js';
+import useSnakke from './src/services/Snakke.ts';
 
 export { useSnakke };
