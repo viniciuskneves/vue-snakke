@@ -12,7 +12,8 @@
   "author": "Vinicius Kiatkoski Neves <viniciuskneves@icloud.com>",
   "repository": "viniciuskneves/vue-snakke",
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "main": "./dist/vue-snakke.umd.js",
   "module": "./dist/vue-snakke.es.js",
@@ -21,7 +22,6 @@
     "start": "vite",
     "build": "BUILD_LIB=false vite build",
     "build:lib": "vite build",
-    "build:declaration": "tsc",
     "serve": "vite preview",
     "prettier": "prettier --write .",
     "prettier:check": "prettier --check .",

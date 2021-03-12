@@ -43,5 +43,7 @@ jobs:
       - run: npm ci
       - name: Run library build
         run: npm run build:lib
+      - name: Run types build
+        run: npx tsc
       - name: Run example build
         run: npm run build

@@ -38,7 +38,6 @@ Run through `npm run [command]`:
 - `prettier:check`: runs Prettier on check mode (useful in CI)
 - `build`: builds the example page (used for deployment)
 - `build:lib`: builds the library (used for releases)
-- `build:declaration`: builds the declarations (used for releases)
 
 ---
 
