@@ -16,6 +16,7 @@
   ],
   "main": "./dist/vue-snakke.umd.js",
   "module": "./dist/vue-snakke.es.js",
+  "types": "./types/services/Snakke.d.ts",
   "scripts": {
     "start": "vite",
     "build": "BUILD_LIB=false vite build",
