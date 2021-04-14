@@ -1,6 +1,6 @@
 {
   "name": "vue-snakke",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Vue 3 utility that enables you to track page scrolling progress",
   "keywords": [
     "vue",
