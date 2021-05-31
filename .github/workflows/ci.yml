@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v2.1.5
         with:
           node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
-      - uses: actions/cache@v2.1.5
+      - uses: actions/cache@v2.1.6
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -34,7 +34,7 @@ jobs:
       - uses: actions/setup-node@v2.1.5
         with:
           node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
-      - uses: actions/cache@v2.1.5
+      - uses: actions/cache@v2.1.6
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
