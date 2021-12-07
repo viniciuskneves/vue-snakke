@@ -9,12 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.4.0
-      - name: Read .nvmrc
-        run: echo "::set-output name=NODE_VERSION::$(cat .nvmrc)"
-        id: nvm
       - uses: actions/setup-node@v2.5.0
         with:
-          node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
+          node-version-file: .nvmrc
           cache: npm
       - run: npm ci
       - name: Run example build
