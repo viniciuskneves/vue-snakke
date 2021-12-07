@@ -8,38 +8,22 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
-      - name: Read .nvmrc
-        run: echo "::set-output name=NODE_VERSION::$(cat .nvmrc)"
-        id: nvm
-      - uses: actions/setup-node@v2.1.5
+      - uses: actions/checkout@v2.4.0
+      - uses: actions/setup-node@v2.5.0
         with:
-          node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
-      - uses: actions/cache@v2.1.4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version-file: .nvmrc
+          cache: npm
       - run: npm ci
       - name: Run Prettier check
         run: npm run prettier:check
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
-      - name: Read .nvmrc
-        run: echo "::set-output name=NODE_VERSION::$(cat .nvmrc)"
-        id: nvm
-      - uses: actions/setup-node@v2.1.5
+      - uses: actions/checkout@v2.4.0
+      - uses: actions/setup-node@v2.5.0
         with:
-          node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
-      - uses: actions/cache@v2.1.4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version-file: .nvmrc
+          cache: npm
       - run: npm ci
       - name: Run library build
         run: npm run build:lib
