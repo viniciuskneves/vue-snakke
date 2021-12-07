@@ -28,11 +28,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "vue": "3.1.5"
+    "vue": "3.2.24"
   },
   "devDependencies": {
+    "@babel/types": "7.16.0",
     "@vitejs/plugin-vue": "1.10.1",
-    "@vue/compiler-sfc": "3.1.5",
     "gitmoji-cli": "4.7.0",
     "husky": "7.0.4",
     "prettier": "2.3.2",
