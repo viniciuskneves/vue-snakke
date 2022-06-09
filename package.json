@@ -31,7 +31,7 @@
     "vue": "3.2.33"
   },
   "devDependencies": {
-    "@babel/types": "7.17.10",
+    "@babel/types": "7.18.4",
     "@vitejs/plugin-vue": "2.3.3",
     "gitmoji-cli": "5.0.0",
     "husky": "7.0.4",
