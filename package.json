@@ -33,7 +33,7 @@
   "devDependencies": {
     "@babel/types": "7.18.4",
     "@vitejs/plugin-vue": "2.3.3",
-    "gitmoji-cli": "5.0.0",
+    "gitmoji-cli": "5.0.1",
     "husky": "8.0.1",
     "prettier": "2.7.1",
     "pretty-quick": "3.1.3",
