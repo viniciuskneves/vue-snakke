@@ -28,7 +28,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "vue": "3.2.37"
+    "vue": "3.2.38"
   },
   "devDependencies": {
     "@babel/types": "7.18.13",
